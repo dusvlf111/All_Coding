@@ -1,5 +1,5 @@
-from openpyxl.styles import Font
 from openpyxl import load_workbook
+from openpyxl.styles import Font
 wb = load_workbook("sample.xlsx")
 ws = wb.active
 
@@ -20,7 +20,7 @@ ws.row_dimensions["1"].height = 50
 
 # 스타일 적용
 #글자색은 빨간 이텔릭 두껍게
-a1.font = Font(color = "FF0000",italic = True, bold=True)
+a1.font = Font(color="FF0000", italic=True, bold=True)
 
-wb.save("sample_style.xlsx")
+wb.save('sample_style.xlsx')
 
