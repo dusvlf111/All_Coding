@@ -1,5 +1,6 @@
 from openpyxl import load_workbook
 from openpyxl.styles import Font
+
 wb = load_workbook("sample.xlsx")
 ws = wb.active
 
