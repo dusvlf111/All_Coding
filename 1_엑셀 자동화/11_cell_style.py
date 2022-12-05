@@ -15,7 +15,7 @@ ws.column_dimensions["A"].width = 5
 
 
 # 1행의 높이를 50으로 설정
-ws.row_dimensions["1"].height = 50
+ws.row_dimensions[1].height = 50
 
 
 # 스타일 적용
