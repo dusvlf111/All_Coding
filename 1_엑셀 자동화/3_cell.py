@@ -37,4 +37,7 @@ for x in range(1,11):
         #ws.cell(column=x, row=y, value=randint(0,100)) # 0부터 100 사이의 숫자
         ws.cell(row=x, column=y, value=index)
         index += 1
+        
+        
+
 wb.save("sample.xlsx")

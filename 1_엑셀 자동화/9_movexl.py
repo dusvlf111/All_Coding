@@ -3,7 +3,7 @@ wb = load_workbook("sample.xlsx")
 ws = wb.active
 
 '''
-# 위치로 이동 시킴
+#위치로 이동 시킴
 ws.move_range("B1:C11", rows=0, cols=1) 
 
 
