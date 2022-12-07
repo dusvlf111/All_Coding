@@ -1,12 +1,13 @@
-from tkinter import *
+from tkinter import * 
+
+
 
 root = Tk()
 root.title("나도 gui")
 root.geometry("604x480") #가로 세로 크기
 
 
-# ------------------------------------
-
+# ----------------------------------------------
 
                             #     extended = 복수 선택 가능
                             #       single = 하나만 선택가능
@@ -35,8 +36,7 @@ def btncmd():
     
     #선택항목 확인                  클릭한 항목이 인덱스 값(위치로 반환)으로 나타남
     print("선택된 항목: ", listbox.curselection())
-    
-    
+
     
     
     

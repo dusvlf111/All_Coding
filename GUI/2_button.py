@@ -19,7 +19,7 @@ btn4.pack()                  #크기 고정 글자수가 늘어나도 버튼크�
 btn5 = Button(root, fg="red", bg="yellow", text="버튼5")
 btn5.pack()
 
-photo = PhotoImage(file="GUI/check.png")
+photo = PhotoImage(file="GUI/c.png")
 btn6 = Button(root, image=photo)
 btn6.pack()
 

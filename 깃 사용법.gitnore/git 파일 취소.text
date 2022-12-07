@@ -1,0 +1,91 @@
+
+----------------------------------------------------------------
+
+
+      [add 취소] 
+
+
+// 깃 현제 파일 상황  확인
+git status
+
+
+//이때, git reset HEAD [file] 명령어를 통해 git add를 취소할 수 있다.
+
+뒤에 파일명이 없으면 add한 파일 전체를 취소한다.
+
+
+ex)
+// CONTRIBUTING.md 파일을 Unstage로 변경한다.
+$ git reset HEAD CONTRIBUTING.md
+
+
+-----------------------------------------------------------------
+
+
+        [커밋 취소법]
+
+
+git log 
+목록 확인
+
+// [방법 1] commit을 취소하고 해당 파일들은 staged 상태로 워킹 디렉터리에 보존
+$ git reset --soft HEAD^
+// [방법 2] commit을 취소하고 해당 파일들은 unstaged 상태로 워킹 디렉터리에 보존
+$ git reset --mixed HEAD^ // 기본 옵션
+$ git reset HEAD^ // 위와 동일
+$ git reset HEAD~2 // 마지막 2개의 commit을 취소
+// [방법 3] commit을 취소하고 해당 파일들은 unstaged 상태로 워킹 디렉터리에서 삭제
+$ git reset --hard HEAD^
+
+
+------------------------------------------------------------------------------------
+
+        [푸쉬 취소]
+
+
+    워킹 디렉터리에서 commit 되돌린다.
+가장 최근의 commit을 취소하고 워킹 디렉터리를 되돌린다.
+// 가장 최근의 commit을 취소 (기본 옵션: --mixed)
+
+
+            $ git reset HEAD^
+
+
+원하는 시점으로 워킹 디렉터리를 되돌린다.
+// Reflog(브랜치와 HEAD가 지난 몇 달 동안에 가리켰었던 커밋) 목록 확인
+
+
+        $ git reflog 또는 $ git log -g
+
+
+// 원하는 시점으로 워킹 디렉터리를 되돌린다.
+
+
+        $ git reset HEAD@{number} 또는 $ git reset [commit id]
+
+
+
+되돌려진 상태에서 다시 commit을 한다.
+
+
+        $ git commit -m "Write commit messages"
+
+
+원격 저장소에 강제로 push 한다.
+
+
+        $ git push origin [branch name] -f
+또는
+
+
+        $ git push origin +[branch name]
+
+
+// Ex) master branch를 원격 저장소(origin)에 강제로 push
+
+
+            $ git push origin +master
+
+
+
+

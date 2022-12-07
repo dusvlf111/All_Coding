@@ -1,0 +1,21 @@
+  python -m venv myenv
+
+파이썬        파일이름
+
+
+
+  .\myenv\Scripts\activate
+
+가상환경 활성화
+
+
+컨트롤 시프트 피
+인터프리터 변경
+
+
+
+  pip freeze
+모든 가상환경 버전 정보 출력
+
+   pip freeze  > requirement
+모든 파일 정보를 파일로 만들어 준다

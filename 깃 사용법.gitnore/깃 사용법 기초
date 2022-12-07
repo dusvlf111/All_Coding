@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+        [에드]
+
+
+
+
+
+$ git add . # 현재 디렉토리의 모든 변경사항을 스테이지에 올린다
+$ git add ./src/components # components 디렉토리의 모든 변경사항을 스테이지에 올린다
+$ git add ./src/components/Test.vue # 특정 파일의 변경사항만 스테이지에 올린다
+$ git add -p # 변경된 사항을 하나하나 살펴보면서 스테이지에 올린다
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------
+
+        [커밋]
+
+
+$ git log --graph
+
+* commit 20f1ea9 (HEAD -> master, origin/master, origin/HEAD)
+| Author: Evan Moon <bboydart91@gmail.com>
+|
+|     회원가입 기능 개발 끝!
+|
+* commit ca693fd
+| Author: Evan Moon <bboydart91@gmail.com>
+|
+|     회원가입 비밀번호 입력 폼 추가
+|
+* commit f9b6e2d
+| Author: Evan Moon <bboydart91@gmail.com>
+|
+|     회원가입 이메일 입력 폼 추가
+|
+
+
+
+---------------------------------------------------------------------------------
+
+        [푸쉬]
+
+$ git push origin master # origin 리모트 서버의 master 브랜치로 푸쉬해줘!
+
+$ git push --set-upstream origin master
+
+
+
+------------------------------------------------
+
+.gitnore 깃에 올리지 않음
+
+

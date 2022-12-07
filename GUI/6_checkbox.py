@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import  *
 
 root = Tk()
 root.title("나도 gui")
@@ -33,6 +33,7 @@ def btncmd():
     
 btn = Button(root, text="클릭", command=btncmd)
 btn.pack()
+
 
 
 # -------------------------------------------
